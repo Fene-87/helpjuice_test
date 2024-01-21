@@ -18,13 +18,10 @@ default: &default
   # For details on connection pooling, see Rails configuration guide
   # https://guides.rubyonrails.org/configuring.html#database-pooling
   pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
-  database: <%= ENV["HELPJUICE_SOLUTION_DATABASE_NAME"] %>
-  username: <%= ENV["HELPJUICE_SOLUTION_DATABASE_USERNAME"] %>
-  password: <%= ENV["HELPJUICE_SOLUTION_DATABASE_PASSWORD"] %>
 
 development:
   <<: *default
-  database: <%= ENV["HELPJUICE_SOLUTION_DATABASE_NAME"] %>
+  database: helpjuice_solution
 
   # The specified database role being used to connect to PostgreSQL.
   # To create additional roles in PostgreSQL see `$ createuser --help`.
@@ -58,7 +55,7 @@ development:
 # Do not set this db to the same as development or production.
 test:
   <<: *default
-  database: <%= ENV["HELPJUICE_SOLUTION_DATABASE_NAME"] %>
+  database: helpjuice_solution
 
 # As with config/credentials.yml, you never want to store sensitive information,
 # like your database password, in your source code. If your source code is
@@ -82,7 +79,7 @@ test:
 #
 production:
   <<: *default
-  url: <%= ENV["DATABASE_URL"] %>
-  database: <%= ENV["HELPJUICE_SOLUTION_DATABASE_NAME"] %>
-  username: <%= ENV["HELPJUICE_SOLUTION_DATABASE_USERNAME"] %>
+  database: helpjuice_solution
+  username: helpjuice_solution_user
   password: <%= ENV["HELPJUICE_SOLUTION_DATABASE_PASSWORD"] %>
+  url: <%= ENV["DATABASE_URL"] %>
