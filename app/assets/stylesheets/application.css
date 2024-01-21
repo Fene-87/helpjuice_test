@@ -51,7 +51,7 @@
 .suggestions {
   width: 100%;
   background-color: #fff;
-  padding: 10px;
+  padding: 0 10px;
 }
 
 .results {
