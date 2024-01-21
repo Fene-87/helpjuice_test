@@ -1,0 +1,9 @@
+<div class="search-page">
+  <h1 class="analytics-header">Search Analytics</h1>
+  <div class="results">
+    <h2>Most Common Queries</h2>
+    <% @most_common_queries.each do |query, count| %>
+      <p><%= query %>: <%= count %> times</p>
+    <% end %>
+  </div>
+</div>

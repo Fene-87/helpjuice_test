@@ -1,0 +1,14 @@
+<div class="search-page">
+  <div class="navbar">
+    <p class="page-header">Helpjuice Search Analytics</p>
+    <%= link_to 'Analytics', search_analytics_path, class: 'analytics-link' %>
+  </div>
+<%= form_with url: searches_path, method: :post, local: true, id: "search-form", class: "search-form", data: { path: searches_path } do |form| %>
+  <%= form.text_field :content, placeholder: "Search...", autofocus: true, id: "search-input", class: "search-input" %>
+  <div id="suggestions" class="suggestions"></div>
+<% end %>
+
+<div id="search-results" class="search-results">
+  
+</div>
+</div>
