@@ -26,6 +26,8 @@ To access the search bar, navigate to the main page. As you type your query into
 
 There is a dedicated analytics page which is accessed by clicking on the analytics link. This presents data on the most common search queries. This data is also updated in real time.
 
+![analytics](https://github.com/Fene-87/helpjuice_test/assets/83401478/8182e026-1ad9-4ce7-81e2-35bb17922524)
+
 ## 🛠 Built With <a name="built-with"></a>
 
 ### Tech Stack <a name="tech-stack"></a>
