@@ -79,7 +79,7 @@ test:
 #
 production:
   <<: *default
-  database: helpjuice_solution
+  database: helpjuice_solution_ksk6
   username: helpjuice_solution_user
   password: <%= ENV["HELPJUICE_SOLUTION_DATABASE_PASSWORD"] %>
   url: <%= ENV["DATABASE_URL"] %>
